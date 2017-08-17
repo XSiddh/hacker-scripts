@@ -18,7 +18,7 @@ con = telnetlib.Telnet(coffee_machine_ip)
 con.read_until(password_prompt)
 con.write(password + "\n")
 
-# Make some coffee!
+
 con.write("sys brew\n")
 time.sleep(64)
 
